@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Você pode editar livremente este arquivo. Veja os blocos comentados abaixo para -->
+<!-- alguns exemplos de como personalizar a compilação. -->
+<!-- (Se você excluí-lo e reabrir o projeto, ele será recriado.) -->
+<!-- Por padrão, apenas os comandos Limpar e Construir usam esse script de construção. -->
+<!-- Comandos como Run, Debug e Test só usam este script de compilação se -->
+<!-- o recurso Compilar ao Salvar está desativado para o projeto. O recurso Compilar ao Salvar está desativado para o projeto. -->
+<!-- Você pode desativar a compilação na configuração de salvamento (ou implantação no salvamento) -->
+<!-- na caixa de diálogo Propriedades do projeto do projeto.-->
+<project name="ControleFinanceiro" default="default" basedir=".">
+    <description>Constrói, testa e executa o projeto ControleFinanceiro.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    Existem vários alvos que estão por padrão vazios e que podem ser 
+    usado para execução de suas tarefas. Esses alvos são geralmente executados 
+    antes e depois de alguns alvos principais. Eles são: 
+
+      -pre-init:                 chamado antes da inicialização das propriedades do projeto
+      -post-init:                chamado após a inicialização das propriedades do projeto
+      -pre-compile:              chamado antes da compilação javac
+      -post-compile:             Chamado após a compilação javac
+      -pre-compile-single:       chamado antes da compilação javac de arquivo único
+      -post-compile-single:      chamado após a compilação javac de arquivo único
+      -pre-compile-test:         Chamado antes da compilação javac de testes de jUnit
+      -post-compile-test:        chamado após a compilação javac de testes de jUnit
+      -pre-compile-test-single:  Chamado antes da compilação do javac de um único teste de jUnit
+      -post-compile-test-single: Chamado após a compilação javac de teste de jUnit único
+      -pre-jar:                  Chamado antes do JAR building
+      -post-jar:                 Chamado após o JAR building
+      -post-clean:               chamado após a limpeza de produtos de construção
+
+    (Alvos começando com '-' não se destinam a ser chamados por conta própria.)
+
+    Exemplo de inserir um ofuscador após a compilação pode ficar assim:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    Para uma lista de propriedades disponíveis, verifique o importado 
+    nbproject/build-impl.xml arquivo. 
+
+
+    Outra maneira de personalizar a construção é substituir os principais alvos existentes.
+    Os alvos de interesse são: 
+
+      -init-macrodef-javac:     Define macro para compilação javac
+      -init-macrodef-junit:     Define macro para execução do junit
+      -init-macrodef-debug:     Define macro para depuração de classe
+      -init-macrodef-java:      Define macro para execução de classe
+      -do-jar:                  Construção de JAR
+      run:                      Execução do projeto 
+      -javadoc-build:           Geração javadoc
+      test-report:              Geração de relatórios jUnit
+
+    Um exemplo de substituir o alvo para a execução do projeto pode ficar assim:
+
+        <target name="run" depends="ControleFinanceiro-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Observe que o alvo substituído depende do alvo jar e não apenas em 
+    o alvo de compilação como o alvo de execução regular faz. Novamente, para uma lista de disponíveis 
+    propriedades que você pode usar, verifique o alvo que você está substituindo no
+    nbproject/build-impl.xml arquivo. 
+
+    -->
+</project>
